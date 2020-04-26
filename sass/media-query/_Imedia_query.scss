@@ -54,10 +54,6 @@
         width: 90%;
     }
 
-    .menu {
-        display: none;
-    }
-
     .media-1033 {
         text-align: center !important;
         padding-bottom: 5px;
@@ -66,10 +62,22 @@
 }
 
 
+@media screen and (min-width:992px) {
+    .burgerMenuContainer {
+        display: none !important;
+    }
+}
+
+
 @media screen and (max-width:992px) {
 
     .burger {
         display: block !important;
+    }
+
+
+    .menu {
+        display: none !important;
     }
 
 }
@@ -134,8 +142,7 @@
 
 @media screen and (max-width:576px) {
 
-    .header-top,
-    .menu {
+    .header-top {
         display: none;
     }
 

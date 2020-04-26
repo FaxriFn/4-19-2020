@@ -9,19 +9,18 @@
 
 }
 
-@media screen and (max-width:768px){
-    .secondVisionRowContent{
-        margin-top: 35px;
-    }
-    .neurology{
-        margin-top: 30px;
-    }
+@media screen and (max-width:769px){
+  
+   
     .contentBestContentThird{
         display: block !important;
                
    }
    .dental{
-       margin-top: 30px;
+       margin-top: 30px ;
+   }
+   .firstCardiology{
+    //    margin-top: 30px;
    }
  
 
@@ -44,6 +43,26 @@
     margin-top: 30px;
 }
  
+}
+@media screen and(max-width:330px){
+    .contentBestContentLeft{
+        i{
+            // display: none;
+            padding-right: 5px;
+            font-size: 40px !important;
+            // width: 40px !important;
+        }
+    }
+}
+@media screen and(max-width:740px){
+    .neurology{
+        margin-top: 30px !important;
+    }
+}
+@media screen and(max-width:690px){
+    .secondVisionRowContent{
+        margin-top: 35px !important;
+    }
 }
 @media screen and (max-width:576px){
 

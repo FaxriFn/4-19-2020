@@ -1,7 +1,20 @@
 @import "shared/variables";
 @import "shared/fonts";
-@import "pages/home";
 
+// ===================================
+
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #515252;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $content-color;
+}
 
 .pagesFaq {
     width: 100%;
@@ -14,11 +27,6 @@
         align-items: baseline;
 
         .pagesFaqLeft {
-
-
-
-
-
             .pagesFaqList {
 
 
@@ -73,7 +81,7 @@
                 cursor: pointer;
                 display: block;
                 position: relative;
-                padding: 18px 49px 18px 29px;
+                padding: 41px 49px 18px 29px;
 
                 h3 {
                     font-size: 20px !important;
@@ -124,7 +132,7 @@
                 display: block;
                 position: relative;
                 padding: 18px 99px 18px 29px;
-                color: black ;
+                color: black;
             }
 
             .accBody {
@@ -168,7 +176,7 @@
 
     .activeHead {
         background-color: $content-color !important;
-        color: white !important;
+        // color: white !important;
     }
 
     .activeWord {
@@ -186,17 +194,12 @@
     .colorDefault {
         color: white !important;
     }
-    .colorBlack{
+
+    .colorBlack {
         color: black !important;
     }
 
-    .twoAcc1,
-    .twoAcc2,
-    .twoAcc3,
-    .twoAcc4,
-    .twoAcc5 {
-        display: none;
-    }
+
 
 
 
@@ -232,6 +235,18 @@
             padding-right: 6px;
             padding-left: 3px;
             color: #303030;
+
+            a {
+                text-decoration: none;
+                transition: .6s;
+                color: #303030 !important;
+
+                &:hover {
+                    color: #007bff !important;
+                    text-decoration: none;
+                }
+            }
+
         }
 
 
@@ -245,7 +260,7 @@
 .appointmentContainer {
     background-color: rgba(0, 125, 242, 1);
     height: 160px;
-    margin: 0 0 20px;
+    // margin: 0 0 20px;
 }
 
 // ==========================================================================
@@ -315,12 +330,241 @@ h2 {
 
 // ==========================================================================
 
-.noneClassMajid {
-    display: none !important;
+::-webkit-scrollbar {
+    width: 7px;
 }
+
+::-webkit-scrollbar-track {
+    background-color: #515252;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $content-color;
+}
+
 
 // ==========================================================================
 
+.secretAccardeon {
+    display: none;
+}
+
+
+
+
+footer {
+    background-color: rgb(20, 20, 20) !important;
+}
+
+.footerCenter {
+    margin: 0 auto;
+    padding: 100px 0 50px;
+}
+
+.mainFooterContent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.footerCard {
+    width: 25%;
+}
+
+.footerCard:nth-child(2) {
+    width: 120px;
+}
+
+.footerCard p {
+    color: #999999;
+    font-family: "Poppins";
+    font-weight: 500;
+    line-height: 33px;
+    font-size: 15px;
+}
+
+.footerCard a {
+    text-decoration: none;
+    color: #999999;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.5s;
+    line-height: 33px;
+
+    &:hover {
+        color: rgba(0, 125, 242, 1);
+    }
+}
+
+.footerCard h3 {
+    color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    font-family: "Poppins";
+    font-weight: 600;
+}
+
+.footerCard:nth-child(1) img {
+    width: 150px;
+    height: 45px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.footerCard:nth-child(2) .footerLinks {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footerCard:nth-child(3) .footerIcons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 180px;
+
+    i {
+        transition: 0.5s;
+        cursor: pointer;
+        font-size: 15px;
+
+        &:hover {
+            color: rgba(0, 125, 242, 1);
+        }
+    }
+}
+
+.footerCard:nth-child(3) p {
+    line-height: 28px;
+}
+
+.footerCard:nth-child(4) {
+    width: 25%;
+}
+
+.footerGallery {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footerImage {
+    width: 32%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.footerImage img {
+    width: 100%;
+}
+
+.hoverInsta {
+    position: absolute;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    font-size: 22px;
+    opacity: 0;
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.footerCopyright {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #999999;
+    font-family: "Poppins";
+    font-weight: 500;
+    line-height: 33px;
+    font-size: 15px;
+    margin-top: 50px;
+    background-color: black !important;
+    p {
+        margin: 0;
+
+        span {
+            margin-right: 25px;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover {
+                color: rgba(0, 125, 242, 1);
+            }
+        }
+    }
+}
+
+// ================================================================================= MEDIA QUERY FOR FOOTER
+// ================================================================================= MEDIA QUERY FOR FOOTER
+@media screen and (min-width:1200px) {
+    .footerCenter {
+        width: 1190px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .footerCenter {
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width:968px) {
+    .footerCard {
+        width: 40% !important;
+        margin-bottom: 40px;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+
+    .footerCard,
+    .footerCopyright {
+        width: 70% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .accHeader a {
+        padding: 18px 94px 18px 29px !important;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .footerCard,
+    .footerCopyright {
+        width: 100% !important;
+    }
+
+    .footerCopyright {
+        line-height: 20px;
+
+        p {
+            margin-bottom: 10px;
+        }
+    }
+
+    .accHeader a {
+        padding: 9px 66px 18px 29px !important;
+    }
+}
 
 // Media
 
@@ -364,27 +608,23 @@ h2 {
     }
 }
 
-// ==========================================================================
 
-@media screen and (max-width:768px) {}
+
+
 
 // ==========================================================================
 
 @media screen and (max-width:766px) {
 
-    .acc1,
-    .acc2,
-    .acc3,
-    .acc4,
-    .acc5 {
+   
+    .secretAccardeon {
+        display: block !important;
+    }
+
+
+    .ResponsivSecretAccardeon {
         display: none !important;
     }
-
-    .twoAcc1 {
-        display: block;
-    }
-
-
 
 
 }
@@ -397,7 +637,7 @@ h2 {
     }
 
     .pagesFaqAcc {
-        // width: 750px;
+
         padding-bottom: 20px !important;
         padding-left: 18px !important;
         padding-right: 5px !important;
@@ -405,3 +645,21 @@ h2 {
 }
 
 // ==========================================================================
+.scrollerTop {
+    opacity: 0;
+    transition: 1s;
+    position: fixed;
+    bottom: 10px;
+    right: 3%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(0, 125, 242, 1);
+    color: #fff;
+    cursor: pointer;
+
+    z-index: 99;
+}

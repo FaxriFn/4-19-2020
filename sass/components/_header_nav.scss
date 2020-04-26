@@ -27,7 +27,7 @@ nav {
     height: 95px;
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
 
     .container {
         width: 1400px;
@@ -118,6 +118,8 @@ nav {
                         color: #303030;
                     }
 
+
+
                     .shopping-cart {
                         position: relative;
                         cursor: pointer;
@@ -158,6 +160,13 @@ nav {
     }
 }
 
+.search i:hover {
+    color: $content-color !important;
+
+}
+
+
+
 @keyframes navbarToShow {
     from {
         top: -50px;
@@ -167,5 +176,141 @@ nav {
     to {
         top: 0;
         opacity: 1;
+    }
+}
+
+
+.borderBottom {
+    position: relative;
+    padding-right: 50px;
+
+    &::before {
+        content: "";
+        width: 80%;
+        border-bottom: 1px solid #d8d8d8;
+        position: absolute;
+        bottom: 0px;
+    }
+}
+
+.dropdownmenuTitle {
+    font-size: 14px;
+    color: #303030;
+    font-weight: 800;
+    line-height: 21px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+// 
+.burgerMenuContainer {
+    background-color: white;
+    box-shadow: 0px 10px 8px rgba(7, 7, 7, 0.11);
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    padding: 10px 20px;
+    display: none;
+    overflow-y: auto;
+    height: 435px;
+}
+
+.burgerMenuNavSelf {
+    padding: 10px 0;
+}
+
+.burgerMenuNavName {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+    .nameOfNav {
+        font-size: 14px;
+        font-family: "Poppins";
+        font-weight: 500;
+        color: #000000;
+        margin: 0;
+        transition: 0.5s;
+        cursor: pointer;
+
+        &:hover {
+            color: rgb(0, 125, 242);
+        }
+    }
+
+    .fa-plus-octagon {
+        font-size: 20px;
+        cursor: pointer;
+        color: #303030;
+        transition: 0.5s;
+
+        &:hover {
+            color: rgb(0, 125, 242);
+        }
+    }
+}
+
+.burgerMenuSubNavNameSelf {
+
+    p {
+        padding: 5px 20px;
+        margin: 0;
+        cursor: pointer;
+        font-size: 14px;
+        font-family: "Poppins";
+        font-weight: 500;
+        color: #000000;
+        transition: 0.5s;
+
+        &:hover {
+            color: rgb(0, 125, 242);
+        }
+    }
+}
+
+.fa-minus-octagon {
+    font-size: 20px;
+    cursor: pointer;
+    color: #303030;
+    transition: 0.5s;
+
+    &:hover {
+        color: rgb(0, 125, 242);
+    }
+}
+
+.burgerMenuSubNavNameSelf h6 {
+    padding: 5px 0;
+    font-size: 14px;
+    font-family: "Poppins";
+    font-weight: 500;
+    color: #303030;
+    margin: 10px 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.burgerMenuSubNavNameSelf iframe {
+    margin: 10px 20px;
+    width: calc(100% - 40px);
+}
+
+
+.overflowHiddenBody {
+    overflow-y: hidden;
+}
+
+
+
+
+
+
+
+// 
+@media screen and(max-width:1346px) {
+    .responsiveMenudrop {
+        left: -650px !important;
     }
 }

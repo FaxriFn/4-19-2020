@@ -1,4 +1,17 @@
 $(function () {
+ 
+
+
+
+  preloaderHandler();
+
+    function preloaderHandler() {
+        $('.preloader').delay(3000).fadeOut(1000);
+        setTimeout(function () {
+          
+            $("body").css("overflow-y", "auto");
+        }, 3000)
+    }
   // Majid
   function modalOpener() {
     let scrollTop = $(document).scrollTop();
@@ -9,16 +22,17 @@ $(function () {
 
     })
     $(document).on('click', '.bigPhotoCenter', function () {
-      $('#modalHome').css('top', `${scrollTop}px`);
+      $('nav').hide();
       $('.modalHomeYoutubeContent iframe').attr('src', ' https://www.youtube.com/embed/h59cKcb_J2M');
       $('#indexWeDoBest').css('opacity', '0.3');
       $('#ourVision').css('opacity', '0.3');
 
-      $('#modalHome').show(100);
       $('.modalHomeYoutubeContent iframe').animate({
-        width: '920px',
-        height: '500px'
+        width: '90%',
+        height: '70vh'
       }, 1000)
+      $('#modalHome').slideDown(1000);
+
       $('body').css('overflow', 'hidden');
 
 
@@ -35,6 +49,8 @@ $(function () {
 
 
       $('#modalHome').hide(100);
+      $('nav').show();
+
       $('body').css('overflow', 'visible');
       $('.modalHomeYoutubeContent iframe').animate({
         width: '360px',
@@ -49,6 +65,8 @@ $(function () {
 
 
       $('#modalHome').hide(100);
+      $('nav').show();
+
       $('body').css('overflow', 'visible');
       $('.modalHomeYoutubeContent iframe').animate({
         width: '360px',
@@ -65,13 +83,10 @@ $(function () {
   }
   modalOpener();
   modalCloser();
-  $('.count_nums').counterUp({
-    delay: 30,
-    time: 3000
-  });
   // Macid End
   // ========================================================//
   //  Faxri
+ 
   $(document).on('mouseenter', '.cardDoctor', function () {
     $(this).css('background', 'rgba(0, 125, 242, 1)');
     $(this).children('.doctorName>h4>a').css('color', 'white');
@@ -122,7 +137,6 @@ $(function () {
     $(this).find('.dropdown-menu').removeClass('show')
 
   })
-  // ========================================================//
 
  
   // ========================================================//
@@ -131,19 +145,25 @@ $(function () {
     delay: 1000,
 
   });
+  $('.count_nums').counterUp({
+    delay: 10,
+    time: 2000
+});
   // ========================================================//
 
   $('.a').owlCarousel({
     loop: true,
-    margin: 20,
+    margin: 10,
     nav: false,
-    dots: true,
+    dots: false,
     responsive: {
       0: {
         items: 1
+      
       },
       600: {
-        items: 2
+        items: 2,
+        margin:0
       },
  
       1000: {
@@ -152,10 +172,15 @@ $(function () {
     }
   })
   $('.sliderFooter').owlCarousel({
-    loop: true,
+  
     margin: 30,
-    nav: false,
+
     dots: true,
+    items:3,
+    loop: true,
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 5000,
     responsive: {
       0: {
         items: 1,
@@ -171,7 +196,22 @@ $(function () {
   });
 
 
+  $('.footerCarousel').owlCarousel({
+    loop: true,
+    margin: 1,
+    nav: false,
+    dots: false,
+    center: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
 
+    responsive: {
+      0: {
+        items: 1
+      }
+    }
+  })
 
 
 
@@ -195,19 +235,26 @@ $(function () {
   }
 
 
+ // ============== SET NAVBAR POSITION WHEN WINDOW OPENS AND WHEN WINDOW SIZE CHANGES (DEFAULT POSITION) 
   // ============== SET NAVBAR POSITION WHEN WINDOW OPENS AND WHEN WINDOW SIZE CHANGES (DEFAULT POSITION) 
   function navbarFixedORSTaticSetter() {
     if ($(window).width() >= 576) {
-      if (window.scrollY > (document.querySelector("nav").offsetHeight + document.querySelector(".header-top").offsetHeight)) {
+      if (window.scrollY > ($("nav").outerHeight() + $(".header-top").outerHeight())) {
         $("nav").css("position", 'fixed');
         $("nav").css("top", '0');
+        $(".burgerMenuContainer").css("position", 'fixed');
+        $(".burgerMenuContainer").css("top", 95 + "px");
       } else {
-        $("header").css("min-height", (document.querySelector("nav").offsetHeight + document.querySelector(".header-top").offsetHeight) + 'px');
+        $("header").css("min-height", ($("nav").outerHeight() + $(".header-top").outerHeight()) + 'px');
         $("nav").css("position", 'static');
+        $(".burgerMenuContainer").css("position", 'absolute');
+        $(".burgerMenuContainer").css("top", 95 + $("nav").position().top + "px");
       }
     } else {
-      $("header").css("min-height", document.querySelector("header>nav").offsetHeight + 'px');
+      $("header").css("min-height", $("header>nav").outerHeight() + 'px');
       $("nav").css("position", 'static');
+      $(".burgerMenuContainer").css("position", 'absolute');
+      $(".burgerMenuContainer").css("top", 95 + $("nav").position().top + "px");
     }
     navbarScrollSetter();
   }
@@ -216,7 +263,7 @@ $(function () {
   // ============== ADD ANIMATION TO NAVBAR RELATIVE TO SCROLL HEIGHT
   function navbarScrollSetter() {
     window.addEventListener("scroll", function () {
-      if (window.scrollY > (document.querySelector("nav").offsetHeight + document.querySelector("header").offsetHeight)) {
+      if (window.scrollY > ($("nav").outerHeight() + $("header").outerHeight())) {
         $("nav").css({
           "position": "fixed",
           "background-color": "white",
@@ -225,6 +272,8 @@ $(function () {
           "animation-duration": "0.5s",
           "animation-fill-mode": "forwards"
         });
+        $(".burgerMenuContainer").css("position", 'fixed');
+        $(".burgerMenuContainer").css("top", 95 + "px");
       } else {
         $("nav").css({
           "position": "static",
@@ -233,10 +282,14 @@ $(function () {
           "animation-duration": "unset",
           "animation-fill-mode": "unset"
         });
+        $(".burgerMenuContainer").css("position", 'absolute');
+        $(".burgerMenuContainer").css("top", 95 + $("nav").position().top + "px");
       }
     });
   }
 
+
+// ===================================================
 
 
   //===================================== HOME SLIDER (BUTTON TURN)
@@ -248,13 +301,11 @@ $(function () {
 
     $(".homeSlider").fadeOut(0.0001);
 
-    let sliderOrder = document.querySelectorAll(".orders");
-    let sliderHome = document.querySelectorAll(".homeSlider");
 
-    for (let i = 0; i < sliderOrder.length; i++) {
-      sliderOrder[i].addEventListener("click", function () {
+    for (let i = 0; i < $(".orders").length; i++) {
+      $(".orders").eq(i).click(function () {
 
-        for (let j = 0; j < sliderHome.length; j++) {
+        for (let j = 0; j < $(".homeSlider").length; j++) {
           $(".homeSlider").eq(j).fadeOut(1000);
           $(".bottomBorder").eq(j).removeClass("selectedBorder");
           $(".homeText").eq(j).fadeOut(0.0001);
@@ -293,9 +344,8 @@ $(function () {
   function autoSliderHome() {
 
     let number;
-    let sliderHome = document.querySelectorAll(".homeSlider");
 
-    for (let j = 0; j < sliderHome.length; j++) {
+    for (let j = 0; j < $(".homeSlider").length; j++) {
       $(".homeSlider").eq(j).fadeOut(1000);
       $(".bottomBorder").eq(j).removeClass("selectedBorder");
       $(".homeText").fadeOut(0.0001);
@@ -303,7 +353,7 @@ $(function () {
     }
 
     slideIndex++;
-    if (slideIndex > sliderHome.length) {
+    if (slideIndex > $(".homeSlider").length) {
       slideIndex = 1
     }
     number = slideIndex - 1;
@@ -329,6 +379,14 @@ $(function () {
 
     idTimeOut = setTimeout(autoSliderHome, 5000);
   }
+
+
+ 
+
+
+
+
+
 // Farid End 
 // ======================================================================================
 

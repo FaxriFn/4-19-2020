@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="https://kit.fontawesome.com/d6c048210c.js" crossorigin="anonymous"></script> -->
+
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css"
-    integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
+        integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
     <link rel="stylesheet" href="plugin/slick.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -17,12 +17,15 @@
     <title>Syring | Medical Clinic WordPress Theme – Medical Clinic WordPress Theme</title>
 </head>
 
-<body style="overflow-x: hidden !important; ">
+<body style="overflow-x: hidden !important; overflow-y: hidden ;">
+
+
+
 
     <div class="custom-container" style="overflow-x: hidden;">
-
-
-
+        <div class="preloaderOverlow">
+            <div class="preloader"></div>
+        </div>
         <header>
             <!-- Header-Top-Info vs Social -->
             <div class="header-top">
@@ -101,16 +104,40 @@
                                                 aria-expanded="false">
                                                 Pages
                                             </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-
-
+                                            <div class="dropdown-menu " aria-labelledby="navbarDropdown"
+                                                style="    left: -317px;">
+                                                <div class="d-flex">
+                                                    <div class="samplePage1" style="    padding-right: 36px;">
+                                                        <a class="dropdown-item borderBottom dropdownmenuTitle"
+                                                            href="#">Sample Page 1</a>
+                                                        <a class="dropdown-item" href="#">About us 1</a>
+                                                        <a class="dropdown-item" href="#">About us 2</a>
+                                                        <a class="dropdown-item" href="#">Our Clinic</a>
+                                                        <a class="dropdown-item" href="#">Contact us 1</a>
+                                                        <a class="dropdown-item" href="#">Contact us 2</a>
+                                                        <a class="dropdown-item" href="#">FAQ</a>
+                                                    </div>
+                                                    <div class="samplePage2" style="    padding-right: 36px;">
+                                                        <a class="dropdown-item borderBottom dropdownmenuTitle"
+                                                            href="#">Sample Page 2</a>
+                                                        <a class="dropdown-item" href="#">Book an Appointment</a>
+                                                        <a class="dropdown-item" href="#">Schedule</a>
+                                                        <a class="dropdown-item" href="#">Required Form</a>
+                                                        <a class="dropdown-item" href="#">Pricings</a>
+                                                        <a class="dropdown-item" href="#"> Page 404 Error</a>
+                                                        <a class="dropdown-item" href="#"> Comming soon</a>
+                                                    </div>
+                                                    <div class="location"
+                                                        style="padding-right: 50px; padding-bottom: 20px;">
+                                                        <a class="dropdown-item borderBottom dropdownmenuTitle" href="#"
+                                                            style="margin-bottom: 20px;">LOCATION</a>
+                                                        <iframe
+                                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194472.6747757882!2d49.71487525134827!3d40.39476946973667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d6bd6211cf9%3A0x343f6b5e7ae56c6b!2zQmFrxLEsIEF6yZlyYmF5Y2Fu!5e0!3m2!1saz!2s!4v1587638075554!5m2!1saz!2s"
+                                                            width="190" height="200" frameborder="0" style="border:0;"
+                                                            allowfullscreen="" aria-hidden="false" tabindex="0"
+                                                            style="margin-top: 15px;"></iframe>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </li>
                                         <li class="nav-item dropdown">
@@ -119,14 +146,12 @@
                                                 aria-expanded="false">
                                                 Doctors
                                             </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
+                                            <div class="dropdown-menu " aria-labelledby="navbarDropdown"
+                                                style="padding-right:100px">
+                                                <a class="dropdown-item" href="#"> Find A Doctor</a>
+                                                <a class="dropdown-item" href="#">Doctor Single</a>
+
+
 
 
                                             </div>
@@ -137,14 +162,11 @@
                                                 aria-expanded="false">
                                                 Departments
                                             </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown"
+                                                style="padding-right:50px">
+                                                <a class="dropdown-item" href="#"> Medical Department</a>
+                                                <a class="dropdown-item" href="#">Dental Clinic</a>
+
 
 
                                             </div>
@@ -155,14 +177,53 @@
                                                 aria-expanded="false">
                                                 Blog
                                             </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
+                                            <div class="dropdown-menu responsiveMenudrop"
+                                                aria-labelledby="navbarDropdown" style="    left: -517px; ">
+
+                                                <div class="d-flex">
+                                                    <div class="samplePage1" style="    padding-right: 36px;">
+                                                        <a class="dropdown-item borderBottom dropdownmenuTitle"
+                                                            href="#">Blog Layout 1</a>
+                                                        <a class="dropdown-item" href="#">List Standard Fullwidth</a>
+                                                        <a class="dropdown-item" href="#">List Standard Sidebar</a>
+                                                        <a class="dropdown-item" href="#">List Modern Fullwidth</a>
+                                                        <a class="dropdown-item" href="#">List Modern Sidebar</a>
+                                                        <a class="dropdown-item" href="#">Grid Standard Fullwidth</a>
+                                                        <a class="dropdown-item" href="#">Grid Standard Sidebar</a>
+                                                    </div>
+                                                    <div class="samplePage2" style="    padding-right: 36px;">
+                                                        <a class="dropdown-item borderBottom dropdownmenuTitle"
+                                                            href="#">BLOG LAYOUT 2 </a>
+                                                        <a class="dropdown-item" href="#">Grid Classic Fullwidth</a>
+                                                        <a class="dropdown-item" href="#">Grid Classic Sidebar</a>
+                                                        <a class="dropdown-item" href="#"> Grid Detail Fullwidth</a>
+                                                        <a class="dropdown-item" href="#">Grid Detail Sidebar</a>
+                                                        <a class="dropdown-item" href="#"> Grid Minimal Outline
+                                                            Fullwidth</a>
+                                                        <a class="dropdown-item" href="#"> Grid Minimal Outline
+                                                            Sidebar</a>
+                                                    </div>
+                                                    <div class="samplePage2" style="    padding-right: 36px;">
+                                                        <a class="dropdown-item borderBottom dropdownmenuTitle"
+                                                            href="#">BLOG LAYOUT 3</a>
+                                                        <a class="dropdown-item" href="#">Grid Minimal Sidebar</a>
+                                                        <a class="dropdown-item" href="#">Grid Minimal Fullwidth</a>
+                                                        <a class="dropdown-item" href="#">Grid Simple Fullwidth</a>
+                                                        <a class="dropdown-item" href="#">Grid Simple Sidebar</a>
+                                                        <a class="dropdown-item" href="#"> Grid Sticky Sidebar</a>
+                                                        <a class="dropdown-item" href="#"> Grid Sticky Fullwidth</a>
+                                                        <a class="dropdown-item" href="#"> Grid Masonry Fullwidth</a>
+                                                    </div>
+                                                    <div class="samplePage2" style="    padding-right: 36px;">
+                                                        <a class="dropdown-item borderBottom dropdownmenuTitle"
+                                                            href="#"> Single Blog</a>
+                                                        <a class="dropdown-item" href="#"> Single Post Standard</a>
+                                                        <a class="dropdown-item" href="#">Single Post Audio</a>
+                                                        <a class="dropdown-item" href="#"> Single Post Quote</a>
+                                                        <a class="dropdown-item" href="#">Single Post Video</a>
+
+                                                    </div>
+                                                </div>
 
 
                                             </div>
@@ -173,14 +234,15 @@
                                                 aria-expanded="false">
                                                 Shop
                                             </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown"
+                                                style="padding-right:100px">
+                                                <a class="dropdown-item" href="#">Shop No Sidebar </a>
+                                                <a class="dropdown-item" href="#"> Shop Sidebar Left</a>
+                                                <a class="dropdown-item" href="#"> Shop Sidebar Right</a>
+                                                <a class="dropdown-item" href="#"> Single Product</a>
+                                                <a class="dropdown-item" href="#"> Cart</a>
+                                                <a class="dropdown-item" href="#"> Checkout</a>
+                                                <a class="dropdown-item" href="#">My Account </a>
 
 
                                             </div>
@@ -191,14 +253,40 @@
                                                 aria-expanded="false">
                                                 Elements
                                             </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
-                                                <a class="dropdown-item" href="#">Home Main</a>
+                                            <div class="dropdown-menu " aria-labelledby="navbarDropdown"
+                                                style="    left: -317px;  ">
+                                                <div class="d-flex">
+                                                    <div class="samplePage1" style="    padding-right: 50px;">
+                                                        <a class="dropdown-item borderBottom dropdownmenuTitle"
+                                                            href="#">Element 01</a>
+                                                        <a class="dropdown-item" href="#"> Accordion </a>
+                                                        <a class="dropdown-item" href="#"> Buttons</a>
+                                                        <a class="dropdown-item" href="#"> Clients </a>
+                                                        <a class="dropdown-item" href="#"> Countdown </a>
+                                                        <a class="dropdown-item" href="#"> Counter</a>
+
+                                                    </div>
+                                                    <div class="samplePage2" style="    padding-right: 50px;">
+                                                        <a class="dropdown-item borderBottom dropdownmenuTitle"
+                                                            href="#"> Element 02 </a>
+                                                        <a class="dropdown-item" href="#">Gallery Slide </a>
+                                                        <a class="dropdown-item" href="#"> Gallery Grid </a>
+                                                        <a class="dropdown-item" href="#"> Instagram </a>
+                                                        <a class="dropdown-item" href="#"> Pricing</a>
+
+                                                    </div>
+                                                    <div class="samplePage2" style="    padding-right: 40px;">
+                                                        <a class="dropdown-item borderBottom dropdownmenuTitle"
+                                                            href="#"> Element 03</a>
+                                                        <a class="dropdown-item" href="#"> Fancy Box </a>
+                                                        <a class="dropdown-item" href="#"> Social network </a>
+                                                        <a class="dropdown-item" href="#"> Team Member </a>
+                                                        <a class="dropdown-item" href="#"> Testimonial</a>
+
+
+                                                    </div>
+
+                                                </div>
 
 
                                             </div>
@@ -227,6 +315,163 @@
                 </div>
             </nav>
         </header>
+        <!-- ======================================================== Hamburger Menu-->
+
+
+        <div class="burgerMenuContainer">
+            <div class="burgerMenuNavSelf">
+                <div class="burgerMenuNavName">
+                    <p class="nameOfNav" style="color: rgb(0, 125, 242);">Home</p>
+                    <i class="fal fa-plus-octagon"></i>
+                </div>
+                <div class="burgerMenuSubNavNameSelf">
+                    <p style="color: rgb(0, 125, 242);">Home Main</p>
+                    <p>Home Clinic</p>
+                    <p>Home Dentist</p>
+                    <p>Home Pediatrician</p>
+                    <p>Home Hospital</p>
+                    <p>Home Home Grid Blogs</p>
+                    <p>Home Geriatrician</p>
+                    <p>Home Diagnostic</p>
+                    <p>Home Medical Blog</p>
+                    <p>Home Medical Shop</p>
+                </div>
+            </div>
+            <div class="burgerMenuNavSelf">
+                <div class="burgerMenuNavName">
+                    <p class="nameOfNav">Pages</p>
+                    <i class="fal fa-plus-octagon"></i>
+                </div>
+                <div class="burgerMenuSubNavNameSelf">
+                    <h6>Sample Page 1</h6>
+                    <p>About us 1</p>
+                    <p>About us 2</p>
+                    <p>Our clinic</p>
+                    <p>Contact us 1</p>
+                    <p>Contact us 2</p>
+                    <p>FAQ</p>
+                    <h6>Sample Page 2</h6>
+                    <p>Book an Appointment</p>
+                    <p>Schedule</p>
+                    <p>Required Form</p>
+                    <p>Pricings</p>
+                    <p>Page 404 Error</p>
+                    <p>Comming soon</p>
+                    <h6>Location</h6>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194472.6747757882!2d49.71487525134827!3d40.39476946973667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d6bd6211cf9%3A0x343f6b5e7ae56c6b!2zQmFrxLEsIEF6yZlyYmF5Y2Fu!5e0!3m2!1saz!2s!4v1587638075554!5m2!1saz!2s"
+                        width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0" style="margin-top: 15px;"></iframe>
+                </div>
+            </div>
+            <div class="burgerMenuNavSelf">
+                <div class="burgerMenuNavName">
+                    <p class="nameOfNav">Doctors</p>
+                    <i class="fal fa-plus-octagon"></i>
+                </div>
+                <div class="burgerMenuSubNavNameSelf">
+                    <p>Find a Doctor</p>
+                    <p>Doctor Single</p>
+                </div>
+            </div>
+            <div class="burgerMenuNavSelf">
+                <div class="burgerMenuNavName">
+                    <p class="nameOfNav">Departments</p>
+                    <i class="fal fa-plus-octagon"></i>
+                </div>
+                <div class="burgerMenuSubNavNameSelf">
+                    <p>Medical Department</p>
+                    <p>Dental Clinic</p>
+                </div>
+            </div>
+            <div class="burgerMenuNavSelf">
+                <div class="burgerMenuNavName">
+                    <p class="nameOfNav">Blog</p>
+                    <i class="fal fa-plus-octagon"></i>
+                </div>
+                <div class="burgerMenuSubNavNameSelf">
+                    <h6>Blog Layout 1</h6>
+                    <p>List Standart Fullwidth</p>
+                    <p>List Standart Sidebar</p>
+                    <p>List Modern Fullwidth</p>
+                    <p>List Modern Sidebar</p>
+                    <p>Grid Standart Fullwidth</p>
+                    <p>Grid Standart Sidebar</p>
+                    <h6>Blog Layout 2</h6>
+                    <p>Grid Classic Fullwidth</p>
+                    <p>Grid Classic Sidebar</p>
+                    <p>Grid Detail Fullwidth</p>
+                    <p>Grid Detail Sidebar</p>
+                    <p>Grid Minimal Outline Fullwidth</p>
+                    <p>Grid Minimal Outline Sidebar</p>
+                    <h6>Blog Layout 3</h6>
+                    <p>Grid Minimal Sidebar</p>
+                    <p>Grid Minimal Fullwidth</p>
+                    <p>Grid Simple Fullwidth</p>
+                    <p>Grid Simple Sidebar</p>
+                    <p>Grid Sticky Fullwidth</p>
+                    <p>Grid Masonary Fullwidth</p>
+                    <h6>Single Blog</h6>
+                    <p>Single Post Standart</p>
+                    <p>Single Post Audio</p>
+                    <p>Single Post Quote</p>
+                    <p>Single Post Video</p>
+                </div>
+            </div>
+            <div class="burgerMenuNavSelf">
+                <div class="burgerMenuNavName">
+                    <p class="nameOfNav">Shop</p>
+                    <i class="fal fa-plus-octagon"></i>
+                </div>
+                <div class="burgerMenuSubNavNameSelf">
+                    <p>Shop No Sidebar</p>
+                    <p>Shop Sidebar Left</p>
+                    <p>Shop Sidebar Right</p>
+                    <p>Single Product</p>
+                    <p>Cart</p>
+                    <p>Checkout</p>
+                </div>
+            </div>
+            <div class="burgerMenuNavSelf">
+                <div class="burgerMenuNavName">
+                    <p class="nameOfNav">Elements</p>
+                    <i class="fal fa-plus-octagon"></i>
+                </div>
+                <div class="burgerMenuSubNavNameSelf">
+                    <h6>Element 01</h6>
+                    <p>Accordion</p>
+                    <p>Buttons</p>
+                    <p>Clients</p>
+                    <p>Countdown</p>
+                    <p>Counter</p>
+                    <h6>Element 02</h6>
+                    <p>Gallery Slide</p>
+                    <p>Gallery Grid</p>
+                    <p>Instagram</p>
+                    <p>Pricing</p>
+                    <h6>Element 03</h6>
+                    <p>Fancy Box</p>
+                    <p>Social Network</p>
+                    <p>Team Member</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- =============================================== -->
+
+
+
+
+
         <!-- =========================================================================================== HOME -->
         <!-- =========================================================================================== HOME -->
         <div class="homeContainer">
@@ -347,6 +592,7 @@
             </div>
         </div>
         <!-- Farid End -->
+
 
         <!-- Mecid -->
 
@@ -554,7 +800,7 @@
                         <div class="row">
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div data-aos="fade-up">
-                                    <div class="contentBestContent">
+                                    <div class="contentBestContent firstCardiology">
                                         <div class="row">
                                             <div class="col-3">
                                                 <div class="contentBestContentLeft">
@@ -567,8 +813,9 @@
                                                         <a href="ada"> Cardiology </a>
                                                     </h5>
                                                     <p>
-                                                        Provides medical care to patients who have problems with their
-                                                        heart or circulation.
+
+                                                        This unit deals with disorders of system, including
+                                                        the brain.
                                                     </p>
                                                 </div>
                                             </div>
@@ -593,8 +840,9 @@
                                                         <a href="ada"> Neurology </a>
                                                     </h5>
                                                     <p>
+
                                                         This unit deals with disorders of system, including
-                                                        the brain and spinal cord. </p>
+                                                        the brain. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -618,8 +866,9 @@
                                                         <a href="ada"> Prthopaedics </a>
                                                     </h5>
                                                     <p>
-                                                        Orthopaedic departments treat problems that affect your
-                                                        system. </p>
+
+                                                        This unit deals with disorders of system, including
+                                                        the brain. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -644,8 +893,9 @@
                                                         <a href="ada"> Dental Clinic </a>
                                                     </h5>
                                                     <p>
-                                                        We are here to provide a full range of exceptional quality care
-                                                        for dental services. </p>
+
+                                                        This unit deals with disorders of system, including
+                                                        the brain. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -669,8 +919,9 @@
                                                         <a href="ada"> Pulmonary </a>
                                                     </h5>
                                                     <p>
-                                                        Syring is one of the leading medical facilities for the
-                                                        diagnostic and of lung.
+
+                                                        This unit deals with disorders of system, including
+                                                        the brain.
                                                     </p>
                                                 </div>
                                             </div>
@@ -695,8 +946,9 @@
                                                         <a href="ada"> Cardiology </a>
                                                     </h5>
                                                     <p>
-                                                        Provides medical care to patients who have problems with their
-                                                        heart or circulation.
+
+                                                        This unit deals with disorders of system, including
+                                                        the brain.
                                                     </p>
                                                 </div>
                                             </div>
@@ -706,6 +958,11 @@
                                 </div>
                             </div>
 
+                        </div>
+                    </div>
+                    <div class="viewAllDepartment">
+                        <div class="viewAllContent">
+                            <span class="viewAllText"> View All department</span>
                         </div>
                     </div>
 
@@ -719,6 +976,28 @@
 
 
         <!-- Faxri -->
+        <div class="modalSearchEvent">
+            <div class="modalSerach d-none">
+                <div class="centerModal">
+                    <div class="inputTextSerach">
+                        <input type="text" class="modalInputSerach" placeholder="Enter key word">
+
+                    </div>
+                    <div class="inputSubmit">
+                        <input type="submit" value="Search" class="search-submit">
+
+                    </div>
+                    <p class="search-description">
+                        <span># Type at least 1 character to search</span>
+                        <span># Hit enter to search or ESC to close</span>
+                    </p>
+                    <div class="circleSerach">
+                        <i class="fal fa-times"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <section id="medicalCenter" class="medicalCenterContainer">
             <div class="medicalCenterText">
                 <div class="responsivTitle">
@@ -764,7 +1043,7 @@
                 <div class="row ">
                     <div class="col-lg-12 ">
                         <div class="medicalCenterCount">
-                            <div class="counter-wrap1" data-aos="fade-up">
+                            <div class="counter-wrap1">
                                 <div class="counter-digit-wrap">
                                     <div class="cmsCcounter count_nums">980</div>
                                     <div class="subDigit">+</div>
@@ -773,7 +1052,7 @@
                                     Satisfied Patients
                                 </div>
                             </div>
-                            <div class="counter-wrap1" data-aos="fade-up">
+                            <div class="counter-wrap1">
                                 <div class="counter-digit-wrap">
                                     <div class="cmsCcounter count_nums">300</div>
                                     <div class="subDigit">+</div>
@@ -782,7 +1061,7 @@
                                     Professional Doctor
                                 </div>
                             </div>
-                            <div class="counter-wrap1" data-aos="fade-up">
+                            <div class="counter-wrap1">
                                 <div class="counter-digit-wrap ">
                                     <div class="cmsCcounter count_nums">100</div>
                                     <div class="subDigit-percent">%</div>
@@ -792,7 +1071,7 @@
                                     Quality
                                 </div>
                             </div>
-                            <div class="counter-wrap1" data-aos="fade-up">
+                            <div class="counter-wrap1">
                                 <div class="counter-digit-wrap">
                                     <div class="cmsCcounter count_nums">17</div>
                                     <div class="subDigit-end">+</div>
@@ -817,7 +1096,7 @@
                 <div class="memberArrow">
 
                     <span>View all members</span>
-                    <!-- <i class="fas fa-long-arrow-alt-right"></i> -->
+
                     <i class="fal fa-long-arrow-right"></i>
                 </div>
 
@@ -924,7 +1203,7 @@
                     <h6>TESTIMONIALS</h6>
                     <h2>Feedback from our patients</h2>
                 </div>
-                <!-- <div class="colorWhite" style="background: white;width: 100%; height: 300px; padding: 20px;"> -->
+
                 <div class="owl-carousel a">
                     <div class="testimonialsSlider ">
                         <div class="cardTestimonials">
@@ -948,7 +1227,7 @@
                             <div class="testimonialsContent">
                                 <img src="img/team1-400x400.jpg" alt="">
                                 <div class="testimonialsText">
-                                    <h5>Yuneli Mom</h5>
+                                    <h5>Yuneli</h5>
                                     <p>Worker</p>
                                 </div>
                             </div>
@@ -972,12 +1251,12 @@
                     <div class="testimonialsSlider ">
                         <div class="cardTestimonials">
                             <p>“From the moment she was wheeled through the doors of the emergency room, my fears were
-                                immediately put to rest. my eye were immediately”</p>
+                                immediately put to rest. My eye is blur, so i can not see ”</p>
                             <div class="testimonialsContent">
                                 <img src="img/testimonial2-400x400.jpg" alt="">
                                 <div class="testimonialsText">
                                     <h5>Fabien </h5>
-                                    <p>Physician  </p>
+                                    <p>Physician </p>
                                 </div>
                             </div>
                             <i class="fas fa-quote-right"></i>
@@ -986,7 +1265,7 @@
                     <div class="testimonialsSlider ">
                         <div class="cardTestimonials">
                             <p>“From the moment she was wheeled through the doors of the emergency room, my fears were
-                                immediately put to rest. my eye were immediately”</p>
+                                immediately put to rest. My eye is blur, so i can not see ”</p>
                             <div class="testimonialsContent">
                                 <img src="img/testimonial1-400x400.jpg" alt="">
                                 <div class="testimonialsText">
@@ -998,7 +1277,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- </div> -->
+
 
                 <div class="gray" style="width: 100%; height: 120px; background:#f5f5f5;"></div>
             </div>
@@ -1014,79 +1293,217 @@
 
                     </div>
                 </div>
-                <div class="owl-carousel sliderFooter">
+                <div class="container">
+                    <div class="owl-carousel sliderFooter">
 
 
-                    <div class="lastestNewsSlider ">
-                        <div class="lastestNewsCard text-center ">
-                            <img src="img/6top-370x250.jpg" alt="">
-                            <p>April 3, 2019 | Canser</p>
-                            <a href="#">
-                                6 Symptoms You Should Never Ignore </a>
+                        <div class="lastestNewsSlider ">
+                            <div class="lastestNewsCard text-center ">
+                                <img src="img/6top-370x250.jpg" alt="">
+                                <p>April 3, 2019 | Canser</p>
+                                <a href="#">
+                                    6 Symptoms You Should Never Ignore </a>
+                            </div>
+                        </div>
+                        <div class="lastestNewsSlider ">
+                            <div class="lastestNewsCard text-center ">
+                                <img src="img/Medical-Tips-370x250.jpg" alt="">
+                                <p>April 3, 2019 | Medical Tips</p>
+                                <a href="#">
+                                    Top 10 new products of medicine that will change the wo...</a>
+                            </div>
+                        </div>
+                        <div class="lastestNewsSlider ">
+                            <div class="lastestNewsCard text-center ">
+                                <img src="img/blog2-370x250.jpg" alt="">
+                                <p>April 3, 2019 | Canser</p>
+                                <a href="#">Oral Verruciform Xanthoma: A case report </a>
+                            </div>
+                        </div>
+                        <div class="lastestNewsSlider ">
+                            <div class="lastestNewsCard text-center ">
+                                <img src="img/MRI-scanning-370x250.jpg" alt="">
+                                <p>April 3, 2019 | MRI scanning</p>
+                                <a href="#">
+                                    A strict diet can also lead to serious illnesses and di... </a>
+                            </div>
+                        </div>
+                        <div class="lastestNewsSlider ">
+                            <div class="lastestNewsCard text-center ">
+                                <img src="img/9359-370x250.jpg" alt="">
+                                <p>April 3, 2019 | Canser</p>
+                                <a href="#"> Are You Living With Purpose. It Could Lengthen Your Lif...</a>
+                            </div>
+                        </div>
+                        <div class="lastestNewsSlider ">
+                            <div class="lastestNewsCard text-center ">
+                                <img src="img/gades-photography-370x250.jpg" alt="">
+                                <p>April 3, 2019 | Health Care</p>
+                                <a href="#">Weighing the risks and benefits of modern hormonal cont...</a>
+                            </div>
+                        </div>
+                        <div class="lastestNewsSlider ">
+                            <div class="lastestNewsCard text-center ">
+                                <img src="img/colegiul_medicilor-370x250.jpg" alt="">
+                                <p>April 3, 2019 | Canser</p>
+                                <a href="#">
+                                    Annual Medical Conference brings <br> together many doctors ... </a>
+                            </div>
+                        </div>
+                        <div class="lastestNewsSlider ">
+                            <div class="lastestNewsCard text-center ">
+                                <img src="img/rawpixe-370x250.jpg" alt="">
+                                <p>April 3, 2019 | Diagnostic</p>
+                                <a href="#"> How a News Story Helped Her Get a Diagnosis </a>
+                            </div>
+                        </div>
+                        <div class="lastestNewsSlider ">
+                            <div class="lastestNewsCard text-center ">
+                                <img src="img/health_care-370x250.jpg" alt="">
+                                <p>April 3, 2019 | Diagnostic</p>
+                                <a href="#">Recommendations Developed for Psoriatic Arthritis Treat.. </a>
+                            </div>
+                        </div>
+                        <div class="lastestNewsSlider ">
+                            <div class="lastestNewsCard text-center ">
+                                <img src="img/health_care-370x250.jpg" alt="">
+                                <p>April 3, 2019 | Diagnostic</p>
+                                <a href="#">Recommendations Developed for Psoriatic Arthritis Treat.. </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="lastestNewsSlider ">
-                        <div class="lastestNewsCard text-center ">
-                            <img src="img/Medical-Tips-370x250.jpg" alt="">
-                            <p>April 3, 2019 | Medical Tips</p>
-                            <a href="#">
-                                Top 10 new products of medicine that will change the wo...</a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <div class="scrollerTop">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+
+        <footer>
+            <div class="footerCenter">
+                <div class="mainFooterContent">
+                    <div class="footerCard">
+                        <img src="img/logo-white.svg" alt="Logo Here!">
+                        <p>With a background in the healthcare software industry and a desire to build great technology
+                            to
+                            help companies succeed in making healthcare better.</p>
+                    </div>
+                    <div class="footerCard">
+                        <h3>Quick Links</h3>
+                        <div class="footerLinks">
+                            <a href=""><i class="fas fa-arrow-right"></i>About Us</a>
+                            <a href=""><i class="fas fa-arrow-right"></i>Departments</a>
+                            <a href=""><i class="fas fa-arrow-right"></i>Find A Doctor</a>
+                            <a href=""><i class="fas fa-arrow-right"></i>FAQ</a>
+                            <a href=""><i class="fas fa-arrow-right"></i>Timetable</a>
+                            <a href=""><i class="fas fa-arrow-right"></i>News</a>
                         </div>
                     </div>
-                    <div class="lastestNewsSlider ">
-                        <div class="lastestNewsCard text-center ">
-                            <img src="img/blog2-370x250.jpg" alt="">
-                            <p>April 3, 2019 | Canser</p>
-                            <a href="#">Oral Verruciform Xanthoma: A case report </a>
+                    <div class="footerCard">
+                        <h3>Contact</h3>
+                        <p>34th Avenue – New York, W2 3XE United State.<br>
+                            info@yourdomain.com <br>
+                            +(123) 1800-88-66
+                        </p>
+                        <div class="footerIcons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-pinterest-p"></i>
+                            <i class="fas fa-globe"></i>
+                            <i class="fab fa-linkedin-in"></i>
                         </div>
                     </div>
-                    <div class="lastestNewsSlider ">
-                        <div class="lastestNewsCard text-center ">
-                            <img src="img/MRI-scanning-370x250.jpg" alt="">
-                            <p>April 3, 2019 | MRI scanning</p>
-                            <a href="#">
-                                A strict diet can also lead to serious illnesses and di... </a>
-                        </div>
-                    </div>
-                    <div class="lastestNewsSlider ">
-                        <div class="lastestNewsCard text-center ">
-                            <img src="img/9359-370x250.jpg" alt="">
-                            <p>April 3, 2019 | Canser</p>
-                            <a href="#"> Are You Living With Purpose. It Could Lengthen Your Lif...</a>
-                        </div>
-                    </div>
-                    <div class="lastestNewsSlider ">
-                        <div class="lastestNewsCard text-center ">
-                            <img src="img/gades-photography-370x250.jpg" alt="">
-                            <p>April 3, 2019 | Health Care</p>
-                            <a href="#">Weighing the risks and benefits of modern hormonal cont...</a>
-                        </div>
-                    </div>
-                    <div class="lastestNewsSlider ">
-                        <div class="lastestNewsCard text-center ">
-                            <img src="img/colegiul_medicilor-370x250.jpg" alt="">
-                            <p>April 3, 2019 | Canser</p>
-                            <a href="#">
-                                Annual Medical Conference brings <br> together many doctors ... </a>
-                        </div>
-                    </div>
-                    <div class="lastestNewsSlider ">
-                        <div class="lastestNewsCard text-center ">
-                            <img src="img/rawpixe-370x250.jpg" alt="">
-                            <p>April 3, 2019 | Diagnostic</p>
-                            <a href="#"> How a News Story Helped Her Get a Diagnosis </a>
-                        </div>
-                    </div>
-                    <div class="lastestNewsSlider ">
-                        <div class="lastestNewsCard text-center ">
-                            <img src="img/health_care-370x250.jpg" alt="">
-                            <p>April 3, 2019 | Diagnostic</p>
-                            <a href="#">Recommendations Developed for Psoriatic Arthritis Treat.. </a>
+                    <div class="footerCard">
+                        <h3>Instagram</h3>
+                        <div class="footerCarouselContainer">
+                            <div class="owl-carousel owl-theme footerCarousel">
+                                <div class="item">
+                                    <div class="itemForStyle">
+                                        <div class="commentFooter">
+                                            OverCome - Charity - Nonprofit WordPress Theme
+                                            pic.twitter.com/Nnw8B85nCs
+                                            <div class="bottomTriangle"></div>
+                                        </div>
+                                        <div class="iconAndContentFooter">
+                                            <i class="fab fa-twitter"></i>
+                                            <div class="contentFooter">
+                                                <p>Web Developer</p>
+                                                <p>November 17,2018 2:00 AM</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="itemForStyle">
+                                        <div class="commentFooter">
+                                            Choles - Multi Concept Blog Wordpress Theme
+                                            Awesome WordPress theme for Blog
+                                            pic.twitter.com/NrSpQOY7vI
+                                            <div class="bottomTriangle"></div>
+                                        </div>
+                                        <div class="iconAndContentFooter">
+                                            <i class="fab fa-twitter"></i>
+                                            <div class="contentFooter">
+                                                <p>Web Developer</p>
+                                                <p>November 17,2018 2:00 AM</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="itemForStyle">
+                                        <div class="commentFooter">
+                                            Choles - Multi Concept Blog Wordpress Theme
+                                            special character: ඣ, ฿
+                                            url :
+                                            choles.zooka.io
+                                            <div class="bottomTriangle"></div>
+                                        </div>
+                                        <div class="iconAndContentFooter">
+                                            <i class="fab fa-twitter"></i>
+                                            <div class="contentFooter">
+                                                <p>Web Developer</p>
+                                                <p>November 17,2018 2:00 AM</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="itemForStyle">
+                                        <div class="commentFooter">
+                                            ZK Clever – High School WordPress Theme
+                                            Thanks for building clever &amp; for your support. Nice work @Zookadotio
+                                            team!
+                                            pic.twitter.com/Nnw8B85nCs
+                                            <div class="bottomTriangle"></div>
+                                        </div>
+                                        <div class="iconAndContentFooter">
+                                            <i class="fab fa-twitter"></i>
+                                            <div class="contentFooter">
+                                                <p>Web Developer</p>
+                                                <p>November 17,2018 2:00 AM</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+            <div class="footerCopyright">
+                <div class="copyRightCenter">
+                    <p>© 2019 Spyropress. All Rights Reserved</p>
+                    <p><span>Term & Conditions</span> <span>Privacy Policy</span></p>
+                </div>
+            </div>
+        </footer>
+
+
+
 
         <!--Faxri end  -->
     </div>
@@ -1113,8 +1530,7 @@
     <script src="plugin/slick.js"></script>
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="plugin/counterup.min.js"></script>
+
 
     <!-- Aos Js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -1123,7 +1539,17 @@
     <!--Jquery  -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+        integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
+    <!-- <script src="plugin/counterup.min.js"></script> -->
     <!-- Personal Js -->
+    <script src="Js/linksPages.js"></script>
+    <script src="Js/common.js"></script>
     <script src="Js/app.js"></script>
 </body>
 

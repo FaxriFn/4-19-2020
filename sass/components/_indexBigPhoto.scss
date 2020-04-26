@@ -1,6 +1,5 @@
 #bigPhoto{
-    border: 1px solid;
-    height: calc(100vh - 80px);
+    height: calc(65vh - 80px);
     background-image: url(../img/main-home-video.jpg);
     background-repeat: no-repeat !important;
     background-size: cover;
@@ -23,9 +22,10 @@
             .hoveredContent{
           
                 background-color: #303030;
-                width: 99px;
-                height: 99px;
-                border-radius: 100%;
+                transform: scale(99);
+                cursor: pointer;
+                border-radius: 50%;
+                
             }
          
         }
@@ -33,20 +33,24 @@
     }
     i{
         position: absolute;
-
+        z-index: 111;
         font-size: 26px;
         color: white;
+        cursor: pointer !important;
     }
     .hoveredContent{
+        border-radius: 50%;
+
        
         width: 1px;
         transition: .5s;
         height: 1px;
+        transform: scale(1);
         background-color: #303030; 
        
     }
     .bigPhotoBlackLayout{
-        height: calc(100vh - 80px);
+        height: calc(65vh - 80px);
         position: absolute;
         background-color: rgba($color: #000000, $alpha: 0.25);
         z-index: 99;

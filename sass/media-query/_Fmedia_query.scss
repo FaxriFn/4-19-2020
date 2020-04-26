@@ -1,3 +1,12 @@
+@media screen and (max-width:1150px) {
+    .menu ul {
+        padding: 0 !important;
+    }
+
+    .menu ul li {
+        margin-left: 16px !important;
+    }
+}
 @media screen and (max-width:1024px) {
 
 
@@ -44,7 +53,7 @@
     .medicalCenterCount .counter-wrap1:last-child {
         display: none !important;
     }
-    .lastestNewsTitle, .professionalDoctorRow{
+  .professionalDoctorRow{
       
         display: block !important;
           justify-content: initial !important;
@@ -56,6 +65,9 @@
       .professionalDoctorRow{
         width: 86% !important;
         margin: auto;
+    }
+    .lastestNewsContainer .lastestNewsTitle h3 {
+        padding-left: 15px ;
     }
 
 }
@@ -91,6 +103,9 @@
 
     }
  
+    .lastestNewsTitle h3{
+        padding: 0px !important;
+    }
 
 }
 
